@@ -42,22 +42,24 @@ class _BottomNavState extends State<BottomNav> {
       body: pages[_page],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _page,
+        elevation: 2,
         selectedItemColor: kPrimaryBlue,
         unselectedItemColor: kTextBlack,
         backgroundColor: kWhite,
         selectedLabelStyle: kStyleDMSams.copyWith(
             fontWeight: FontWeight.w700,
             fontSize: 12.0.sp,
-            height: (22 / 12.0).sp,
+            height: (32 / 12.0).sp,
             color: kPrimaryBlue),
+
         showUnselectedLabels: true,
         unselectedLabelStyle: kStyleDMSams.copyWith(
           fontWeight: FontWeight.w400,
           fontSize: 12.0.sp,
-          height: (22 / 12.0).sp,
+          height: (32 / 12.0).sp,
           color: kInactiveColor,
         ),
-        iconSize: 24,
+        // iconSize: 24,
         onTap: updatePage,
         items: [
           // HOME

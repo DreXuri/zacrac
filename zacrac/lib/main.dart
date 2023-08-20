@@ -8,6 +8,7 @@ import 'package:logging/logging.dart';
 import 'config/routes.dart';
 import 'core/utils/my_scroll_behaviour.dart';
 import 'core/widgets/nav_bar.dart';
+import 'features/auth/view/auth.dart';
 
 void main() async {
   _setupLoggin();
@@ -42,7 +43,8 @@ class MyApp extends StatelessWidget {
           );
           return widget;
         },
-        initialRoute: BottomNav.route,
+        // initialRoute: BottomNav.route,
+        initialRoute: AuthScreen.route,
         onGenerateRoute: onGenerateRoutes,
       ),
     );

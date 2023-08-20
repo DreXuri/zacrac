@@ -19,5 +19,6 @@ class Assets {
   static const String calendarIcon = '$_iconPath/calendar.svg';
 
   //Images
-  static const String backgroudImage = '$_imagePath/home_background.svg';
+  // static const String backgroudImage = '$_imagePath/home_background.svg';
+  static const String backgroudImage = '$_imagePath/background.png';
 }

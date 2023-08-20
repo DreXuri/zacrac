@@ -7,4 +7,7 @@ import 'color_costants.dart';
 final kStyleDMSams = GoogleFonts.dmSans(
   textStyle: const TextStyle(color: kTextGray),
 );
-
+//inter Fonts
+final kStyleInter = GoogleFonts.inter(
+  textStyle: const TextStyle(color: kWhite),
+);
