@@ -4,7 +4,6 @@ class Assets {
   static const String _imagePath = 'assets/images';
   static const String _iconPath = 'assets/icons';
 
-
   //Icons
 
   static const String addIcon = '$_iconPath/add.svg';
@@ -17,8 +16,8 @@ class Assets {
   static const String receiptIcon = '$_iconPath/receipt_icon.svg';
   static const String spotifyIcon = '$_iconPath/spotify_icon.svg';
   static const String arrowLeftIcon = '$_iconPath/arrow_left.svg';
+  static const String calendarIcon = '$_iconPath/calendar.svg';
 
   //Images
   static const String backgroudImage = '$_imagePath/home_background.svg';
-
 }

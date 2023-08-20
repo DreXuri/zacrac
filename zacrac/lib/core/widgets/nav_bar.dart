@@ -79,7 +79,7 @@ class _BottomNavState extends State<BottomNav> {
             icon: SizedBox(
               width: bottomBarWidth,
               child: SvgPicture.asset(
-                Assets.ticketIcon,
+                Assets.calendarIcon,
                 color: _page == 1 ? kPrimaryBlue : kTextBlack,
               ),
             ),
