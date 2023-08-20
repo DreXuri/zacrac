@@ -1,9 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:zacrac/core/utils/assets_constant.dart';
-
 
 import '../../features/home/view/home_page.dart';
 import '../../features/others/view/others_page.dart';
@@ -48,11 +46,10 @@ class _BottomNavState extends State<BottomNav> {
         unselectedItemColor: kTextBlack,
         backgroundColor: kWhite,
         selectedLabelStyle: kStyleDMSams.copyWith(
-          fontWeight: FontWeight.w700,
-          fontSize: 12.0.sp,
-          height: (22 / 12.0).sp,
-          color: kPrimaryBlue
-        ),
+            fontWeight: FontWeight.w700,
+            fontSize: 12.0.sp,
+            height: (22 / 12.0).sp,
+            color: kPrimaryBlue),
         showUnselectedLabels: true,
         unselectedLabelStyle: kStyleDMSams.copyWith(
           fontWeight: FontWeight.w400,
@@ -95,7 +92,7 @@ class _BottomNavState extends State<BottomNav> {
             icon: SizedBox(
               width: bottomBarWidth,
               child: SvgPicture.asset(
-                Assets.receiptIcon,
+                Assets.ticketIcon,
                 color: _page == 2 ? kPrimaryBlue : kTextBlack,
               ),
             ),
