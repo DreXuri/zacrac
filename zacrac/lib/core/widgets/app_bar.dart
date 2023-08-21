@@ -40,20 +40,16 @@ PreferredSizeWidget customAppBar(
                 },
             child: leading ??
                 SizedBox(
-                  height: 42,
-                  width: 42,
+                  height: 24.h,
+                  width: 24.h,
                   child: Align(
                     alignment: Alignment.center,
                     child: Padding(
                       padding: EdgeInsets.only(
-                        //TODO CHECK TTHIS
                         left: 25.0.w,
                         top: 8.h,
                       ),
-                      child: RotatedBox(
-                        quarterTurns: 90,
-                        child: SvgPicture.asset(Assets.arrowLeftIcon),
-                      ),
+                      child: SvgPicture.asset(Assets.arrowBckIcon),
                     ),
                   ),
                 ),
@@ -64,7 +60,21 @@ PreferredSizeWidget customAppBar(
     titleSpacing: titleSpacing,
     bottom: bottom,
     iconTheme: iconThemeData,
-    actions: action,
+    actions: action ??
+        [
+          GestureDetector(
+            onTap: () {},
+            child: Padding(
+              padding: EdgeInsets.only(
+                right: 25.0.w,
+                top: 8.h,
+              ),
+              child: SvgPicture.asset(
+                Assets.addIcon,
+              ),
+            ),
+          ),
+        ],
     title: Padding(
       padding: EdgeInsets.only(top: 5.0.h),
       child: title ??
