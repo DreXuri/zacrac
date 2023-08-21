@@ -83,76 +83,78 @@ class PrimaryButton extends StatelessWidget {
   }
 }
 
-// class CardButton extends StatelessWidget {
-//   const CardButton({
-//     super.key,
-//     this.label,
-//     this.hasShadow = false,
-//     this.shadowColor,
-//     this.color,
-//     this.textColor,
-//     this.fontSize,
-//     this.onTap,
-//     this.borderRadius,
-//     this.border,
-//     this.fontWeight,
-//     this.padding,
-//     this.margin,
-//     this.alignToCenter = true,
-//     this.child,
-//   })  : assert(child != null || label != null,
-//             'Either of child or label is required'),
-//         assert(child == null || label == null,
-//             'You cannot supply both child and label arguments');
+class CardButton extends StatelessWidget {
+  const CardButton({
+    super.key,
+    this.label,
+    this.hasShadow = false,
+    this.shadowColor,
+    this.color,
+    this.textColor,
+    this.fontSize,
+    this.onTap,
+    this.borderRadius,
+    this.border,
+    this.fontWeight,
+    this.padding,
+    this.margin,
+    this.alignToCenter = true,
+    this.child,
+  })  : assert(child != null || label != null,
+            'Either of child or label is required'),
+        assert(child == null || label == null,
+            'You cannot supply both child and label arguments');
 
-//   final String? label;
-//   final bool hasShadow;
-//   final Color? shadowColor;
-//   final Color? color;
-//   final Color? textColor;
-//   final double? fontSize;
-//   final VoidCallback? onTap;
-//   final double? borderRadius;
-//   final BoxBorder? border;
-//   final FontWeight? fontWeight;
-//   final EdgeInsetsGeometry? padding;
-//   final EdgeInsetsGeometry? margin;
-//   final bool alignToCenter;
-//   final Widget? child;
+  final String? label;
+  final bool hasShadow;
+  final Color? shadowColor;
+  final Color? color;
+  final Color? textColor;
+  final double? fontSize;
+  final VoidCallback? onTap;
+  final double? borderRadius;
+  final BoxBorder? border;
+  final FontWeight? fontWeight;
+  final EdgeInsetsGeometry? padding;
+  final EdgeInsetsGeometry? margin;
+  final bool alignToCenter;
+  final Widget? child;
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return OnTapFade(
-//       onTap: onTap,
-//       child: Container(
-//         alignment: alignToCenter ? Alignment.center : null,
-//         margin: margin,
-//         padding:
-//             padding ?? EdgeInsets.symmetric(horizontal: 10.w, vertical: 4.h),
-//         decoration: BoxDecoration(
-//           borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
-//           border: border,
-//           boxShadow: hasShadow
-//               ? [
-//                   BoxShadow(
-//                     color: color ?? kPrimary.withOpacity(0.1),
-//                     spreadRadius: 2,
-//                     offset: const Offset(0, 2),
-//                     blurRadius: 5,
-//                   )
-//                 ]
-//               : null,
-//           color: color ?? kWhite,
-//         ),
-//         child: child ??
-//             CustomText(
-//               data: label ?? '',
-//               textAlign: TextAlign.center,
-//               color: textColor,
-//               fontSize: fontSize ?? 11.sp,
-//               fontWeight: fontWeight ?? FontWeight.w600,
-//             ),
-//       ),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: InkWell(
+        onTap: onTap,
+        child: Container(
+          alignment: alignToCenter ? Alignment.center : null,
+          margin: margin,
+          padding:
+              padding ?? EdgeInsets.symmetric(horizontal: 20.w, vertical: 14.h),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(borderRadius ?? 18.r),
+            border: border,
+            boxShadow: hasShadow
+                ? [
+                    BoxShadow(
+                      color: color ?? kTextBlack.withOpacity(0.1),
+                      spreadRadius: 2,
+                      offset: const Offset(0, 2),
+                      blurRadius: 5,
+                    )
+                  ]
+                : null,
+            color: color ?? kCard,
+          ),
+          child: child ??
+              CustomText(
+                data: label ?? '',
+                textAlign: TextAlign.center,
+                color: textColor,
+                fontSize: fontSize ?? 11.sp,
+                fontWeight: fontWeight ?? FontWeight.w600,
+              ),
+        ),
+      ),
+    );
+  }
+}
