@@ -35,14 +35,13 @@ dependencies:
   logging: ^1.1.1
   # Functional Programming in Dart. Purify your Dart code using efficient immutable data structures, monads, lenses and other FP tools.
   dartz: ^0.10.1
-  # A simple way to access state from anywhere in your application while robust and testable.
-  flutter_riverpod: ^2.3.1
-  # Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.
-  shared_preferences: ^2.0.18
-  # Flutter plugin for Android and iOS devices to allow local authentication via fingerprint, touch ID, face ID, passcode, pin, or pattern.
-  local_auth: ^2.1.6
+  # for circular progresss bar
+  dashed_circular_progress_bar: ^0.0.4
+  # for smooth page trnsition
+  smooth_page_indicator: ^1.1.0
 
- 
+  
+
 
 dev_dependencies:
   flutter_test:
@@ -50,14 +49,7 @@ dev_dependencies:
 
   # Recommended lints for Flutter apps, packages, and plugins to encourage good coding practices.
   flutter_lints: ^2.0.0
-  # A build system for Dart code generation and modular compilation.
-  build_runner: ^2.3.3
-  # Code generation for immutable classes that has a simple syntax/API without compromising on the features. 
-  freezed: ^2.3.2
-  # Automatically generate code for converting to and from JSON by annotating Dart classes.
-  json_serializable: ^6.6.1
-  # Chopper is an http client generator using source_gen, inspired by Retrofit
-  chopper_generator: ^6.0.0
+
 
 flutter:
 

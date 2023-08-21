@@ -39,7 +39,6 @@ class MyApp extends StatelessWidget {
           );
           return widget;
         },
-        // initialRoute: BottomNav.route,
         initialRoute: AuthScreen.route,
         onGenerateRoute: onGenerateRoutes,
       ),

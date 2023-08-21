@@ -33,8 +33,7 @@ class _AuthScreenState extends State<AuthScreen> {
               ),
               SafeArea(
                 child: Column(
-                  // mainAxisAlignment: MainAxisAlignment.center,
-                  // crossAxisAlignment: CrossAxisAlignment.center,
+              
                   children: [
                     vSpace(481.h),
                     Padding(
