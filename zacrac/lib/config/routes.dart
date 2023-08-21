@@ -10,11 +10,7 @@ import '../features/this_month/view/this_month_page.dart';
 
 Route? onGenerateRoutes(RouteSettings settings) {
   switch (settings.name) {
-    // case SplashScreen.route:
-    //   return PageTransition(
-    //     child: const SplashScreen(),
-    //     type: PageTransitionType.rightToLeft,
-    //   );
+
     case AuthScreen.route:
       return PageTransition(
         child: const AuthScreen(),
@@ -26,8 +22,13 @@ Route? onGenerateRoutes(RouteSettings settings) {
 
     case Overview.route:
       return PageTransition(
-          child: const Overview(), type: PageTransitionType.rightToLeft);
+          child:  Overview(), type: PageTransitionType.rightToLeft);
 
+    case Overview.route:
+      return MaterialPageRoute(
+        settings: settings,
+        builder: (_) => Overview(),
+      );
     case ThisMonth.route:
       return PageTransition(
           child: const ThisMonth(), type: PageTransitionType.rightToLeft);
@@ -38,7 +39,7 @@ Route? onGenerateRoutes(RouteSettings settings) {
 
     case Settings.route:
       return PageTransition(
-          child: const Settings(), type: PageTransitionType.rightToLeft);
+          child: Settings(), type: PageTransitionType.rightToLeft);
 
     default:
       return MaterialPageRoute(

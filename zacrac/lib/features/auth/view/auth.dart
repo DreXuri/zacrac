@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:zacrac/core/utils/assets_constant.dart';
 import 'package:zacrac/core/utils/color_costants.dart';
 import 'package:zacrac/core/utils/constants.dart';

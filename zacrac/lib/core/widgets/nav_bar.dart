@@ -24,10 +24,10 @@ class _BottomNavState extends State<BottomNav> {
   double bottomBarBorderWidth = 5;
 
   List<Widget> pages = [
-    const Overview(),
+  Overview(),
     const ThisMonth(),
     const Others(),
-    const Settings(),
+ const   Settings(),
   ];
 
   void updatePage(int page) {

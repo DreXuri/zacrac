@@ -20,8 +20,13 @@ class Assets {
   static const String arrowDownIcon = '$_iconPath/arrow-down.svg';
   static const String arrowRightIcon = '$_iconPath/arrow-right.svg';
   static const String calendarIcon = '$_iconPath/calendar.svg';
+  static const String barOneIcon = '$_iconPath/indicator_1.svg';
+  static const String barTwoIcon = '$_iconPath/indicator_two.svg';
+  static const String barThreeIcon = '$_iconPath/indicator_three.svg';
+  static const String barfourIcon = '$_iconPath/indicator_four.svg';
+  static const String barfiveIcon = '$_iconPath/indicator_fie.svg';
 
   //Images
-  // static const String backgroudImage = '$_imagePath/home_background.svg';
   static const String backgroudImage = '$_imagePath/background.png';
+  static const String trackImage = '$_imagePath/track.png';
 }
