@@ -23,52 +23,55 @@ class _AuthScreenState extends State<AuthScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            child: Stack(children: [
-              Image.asset(
-                Assets.backgroudImage,
-                width: double.infinity,
-                height: double.infinity,
-              ),
-              SafeArea(
-                child: Column(
-              
-                  children: [
-                    vSpace(481.h),
-                    Padding(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 76.w,
-                        vertical: 0.w,
-                      ),
-                      child: CustomText(
-                        data: 'Be happy with you finance ',
-                        textStyle: kStyleInter.copyWith(
-                          color: kWhite,
-                          fontWeight: FontWeight.w200,
-                          fontSize: 32.sp,
-                          letterSpacing: 1.sp,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    vSpace(52.h),
-                    PrimaryButton(
-                      text: 'Sign up',
-                      onPressed: () {},
-                    ),
-                    vSpace(),
-                    PrimaryButton(
-                      borderColor: kWhite,
-                      backgroundColor: Colors.transparent,
-                      text: 'Log in',
-                      onPressed: () {
-                        Navigator.of(context).pushNamed(BottomNav.route);
-                      },
-                    ),
-                  ],
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage(
+              Assets.backgroudImage,
+            ),
+            fit: BoxFit.cover),
+        // gradient: kGradient,
+      ),
+      child: Container(
+        decoration: BoxDecoration(gradient: kGradient),
+        child: SafeArea(
+          child: Column(
+            children: [
+              vSpace(481.h),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 76.w,
+                  vertical: 0.w,
+                ),
+                child: CustomText(
+                  data: 'Be happy with you finance',
+                  textStyle: kStyleInter.copyWith(
+                      fontWeight: FontWeight.w200,
+                      fontSize: 32.sp,
+                      letterSpacing: 1.sp,
+                      height: 39 / 32.sp),
+                  textAlign: TextAlign.center,
                 ),
               ),
-            ])));
+              vSpace(52.h),
+              PrimaryButton(
+                text: 'Sign up',
+                onPressed: () {},
+              ),
+              vSpace(),
+              PrimaryButton(
+                borderColor: kWhite,
+                backgroundColor: Colors.transparent,
+                text: 'Log in',
+                onPressed: () {
+                  Navigator.of(context).pushNamed(BottomNav.route);
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    ));
   }
 }

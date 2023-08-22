@@ -15,6 +15,7 @@ dependencies:
   google_fonts: ^4.0.3
   # A flutter plugin for adapting screen and font size.Guaranteed to look good on different models
   flutter_screenutil: ^5.5.4
+
   # Flutter Page Transition Package which is the transition second page
   page_transition: ^2.0.9
   # An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.
@@ -39,6 +40,8 @@ dependencies:
   dashed_circular_progress_bar: ^0.0.4
   # for smooth page trnsition
   smooth_page_indicator: ^1.1.0
+  # Customize Flutter's default white native splash screen with background color and splash image. Supports dark mode, full screen, and more.
+  flutter_native_splash: ^2.2.19
 
   
 
@@ -50,7 +53,18 @@ dev_dependencies:
   # Recommended lints for Flutter apps, packages, and plugins to encourage good coding practices.
   flutter_lints: ^2.0.0
 
+  flutter_launcher_icons: "^0.13.1"
+flutter_launcher_icons:
+  ios: true
+  android: true
+  image_path: "assets/zacrac_logo.png"
+  adaptive_icon_background: "#0B9C07"
+  adaptive_icon_foreground: "assets/zacrac_logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
 
+  macos:
+    generate: true
+    image_path: "assets/zacrac_logo.png"
 flutter:
 
   uses-material-design: true
@@ -59,6 +73,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/zacrac_logo.png
 
     
 

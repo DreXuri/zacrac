@@ -55,7 +55,7 @@ PreferredSizeWidget customAppBar(
                 ),
           ),
     automaticallyImplyLeading: automaticallyImplyLeading,
-    backgroundColor: backgroundColor ?? kWhite,
+    backgroundColor: backgroundColor ?? kBackground,
     elevation: elevation,
     titleSpacing: titleSpacing,
     bottom: bottom,

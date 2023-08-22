@@ -23,7 +23,7 @@ class CreditPage extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 23.h),
+            padding: EdgeInsets.symmetric(horizontal: 23.w, vertical: 45.h),
             child: Column(
               children: [
                 Padding(
@@ -35,6 +35,7 @@ class CreditPage extends StatelessWidget {
                           Assets.trackImage,
                         ),
                       ),
+                      vSpace(20.h),
                       Align(
                         alignment: Alignment.center,
                         child: Padding(
